@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Росман-Авто</title>
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body class="body">
+  <header class="header" id="header">
+    <div class="header__container container">
+      <div class="logo">
+        <img src="/img/header/RA_logo.png" alt="" class="logo__png">
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#services" class="nav__link">Услуги</a>
+          </li>
+          <li class="nav__item">
+            <a href="#promo" class="nav__link">Акции</a>
+          </li>
+          <li class="nav__item">
+            <a href="#repairs" class="nav__link">Малярка</a>
+          </li>
+          <li class="nav__item">
+            <a href="#feedback" class="nav__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <img src="/img/header/menu_burger_icon.svg" alt="" class="burger">
+    </div>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="hero__container container">
+      <h2 class="hero__heading">
+        Автосервис <br class="hero__br"> в Санкт-Петербурге
+      </h2>
+      <div class="hero__content">
+        <img src="/img/hero/Background.svg" alt="" class="hero__svg">
+        <p class="hero__description">ул. Складская д. 6в</p>
+        <div class="hero__tel">
+          <a href="tel:+78129265112" class="tel">+7 (812) 926-51-12</a>
+          <a href="tel:+78129265112" class="tel-mobile">Позвонить</a>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section class="promo" id="promo">
+    <div class="promo__container">
+      <h2 class="promo__heading container">
+        Акции
+      </h2>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <button class="promo__content promo__content_1">
+              <p class="promo__decription promo__decription_1">Технический осмотр от 2500₽ для седанов до конца осени
+              </p>
+            </button>
+          </div>
+          <div class="swiper-slide">
+            <button class="promo__content promo__content_2">
+              <p class="promo__decription promo__decription_2">Каждый четвертый элемент красим бесплатно</p>
+            </button>
+          </div>
+          <div class="swiper-slide">
+            <button class="promo__content promo__content_3">
+              <p class="promo__decription promo__decription_3">Скидки до 30% на слесарные работы для таксистов</p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="services__container container">
+      <h2 class="services__heading">Услуги</h2>
+      <ul class="services__content">
+        <li class="services__card services__card_1">
+          <p class="services__description">
+            Снятие и установка двигателя
+          </p>
+          <button class="services__btn">
+            Смотреть цены
+          </button>
+          <img src="/img/services/arrow.svg" alt="" class="arrow">
+        </li>
+        <li class="services__card services__card_2">
+          <p class="services__description">
+            Снятие и установка трансмиссии
+          </p>
+          <button class="services__btn">
+            Смотреть цены
+          </button>
+          <img src="/img/services/arrow.svg" alt="" class="arrow">
+        </li>
+        <li class="services__card services__card_3">
+          <p class="services__description">
+            Диагностика ходовой
+          </p>
+          <button class="services__btn">
+            Смотреть цены
+          </button>
+          <img src="/img/services/arrow.svg" alt="" class="arrow">
+        </li>
+        <li class="services__card services__card_4">
+          <p class="services__description">
+            Ремонт тормозной системы
+          </p>
+          <button class="services__btn">
+            Смотреть цены
+          </button>
+          <img src="/img/services/arrow.svg" alt="" class="arrow">
+        </li>
+        <li class="services__card services__card_5">
+          <p class="services__description">
+            Заправка и ремонт кондиционеров
+          </p>
+          <button class="services__btn">
+            Смотреть цены
+          </button>
+          <img src="/img/services/arrow.svg" alt="" class="arrow">
+        </li>
+        <li class="services__card services__card_6">
+          <p class="services__description">
+            Ремонт электрики
+          </p>
+          <button class="services__btn">
+            Смотреть цены
+          </button>
+          <img src="/img/services/arrow.svg" alt="" class="arrow">
+        </li>
+        <li class="services__card services__card_7">
+          <p class="services__description">
+            Шинамонтаж
+          </p>
+          <button class="services__btn">
+            Смотреть цены
+          </button>
+          <img src="/img/services/arrow.svg" alt="" class="arrow">
+        </li>
+        <li class="services__card services__card_8">
+          <p class="services__description">
+            Ремонт рулевого управления
+          </p>
+          <button class="services__btn">
+            Смотреть цены
+          </button>
+          <img src="/img/services/arrow.svg" alt="" class="arrow">
+        </li>
+      </ul>
+      <button class="services__all-btn">
+        Все услуги
+      </button>
+    </div>
+  </section>
+
+  <section class="repairs" id="repairs">
+    <div class="repairs__container container">
+      <div class="repairs__left-side">
+        <h2 class="repairs__heading">
+          Малярно кузовной ремонт
+        </h2>
+        <p class="repairs__description">
+          Покраска автомобиля класса седан
+        </p>
+        <p class="repairs__addition repairs__addition_1">* Цены указаны с учётом стоимости лакокрасочных материалов.</p>
+        <p class="repairs__addition repairs__addition_2">* Цены указаны без учёта стоимости работ по кузовному ремонту,
+          разборке и сборке элемента.</p>
+        <p class="repairs__addition repairs__addition_3">* Итоговая стоимость определяется после осмотра транспортного
+          средства мастером!</p>
+      </div>
+      <div class="repairs__right-side">
+        <p class="repairs__cost">СТОИМОСТЬ РАБОТ</p>
+        <ul class="repairs__cost-list">
+          <li class="repairs__cost-item">
+            <div class="price__number">1</div>
+            <p class="repairs__price">Крыша - 10000₽ ***</p>
+          </li>
+          <li class="repairs__cost-item">
+            <div class="price__number">2</div>
+            <p class="repairs__price">Капот - 7000₽ ***</p>
+          </li>
+          <li class="repairs__cost-item">
+            <div class="price__number">3</div>
+            <p class="repairs__price">Покраска бампера/крыла/двери - 7000₽ ***</p>
+          </li>
+          <li class="repairs__cost-item">
+            <div class="price__number">4</div>
+            <p class="repairs__price">Порог - 3000₽ ***</p>
+          </li>
+          <li class="repairs__cost-item">
+            <div class="price__number">5</div>
+            <p class="repairs__price">Крышка багажника - 5000₽ ***</p>
+          </li>
+          <li class="repairs__cost-item">
+            <div class="price__number">6</div>
+            <p class="repairs__price">Зеркало - 1500₽ ***</p>
+          </li>
+        </ul>
+        <button class="repairs__btn">
+          Рассчитать стоимость
+        </button>
+      </div>
+      <div class="addition-list">
+        <p class="addition-list__heading">Значения звездочек (***)</p>
+        <img src="/img/repairs/arrow.svg" alt="" class="addition__arrow">
+      </div>
+    </div>
+  </section>
+
+  <section class="feedback" id="feedback">
+    <div class="feedback__container container">
+      <div class="request">
+        <button class="request__btn">
+          Записаться на СТО
+        </button>
+        <p class="request__description">
+          Оставьте заявку и мы обязательно свяжемся с Вами. <br>
+          С удовольствием ответим на все Ваши вопросы 😁
+        </p>
+      </div>
+      <div class="contacts">
+        <div class="contacts__container">
+          <h2 class="contacts__heading">Контакты</h2>
+          <div class="tels">
+            <p class="tels__paragraph"><a href="tel:+78129204189" class="tel__link">+7 (812) 920-41-89</a><br>
+              Малярно-кузовной участок</p>
+            <p class="tels__paragraph"><a href="tel:+78129265112" class="tel__link">+7 (812) 926-51-12</a> <br>Слесарные
+              работы</p>
+          </div>
+          <div class="mail">
+            <p class="mail"><a href="mailto:rosman.auto@gmail.com" class="mail__link">rosman.auto@gmail.com</a> Почта
+            </p>
+          </div>
+          <div class="social">
+            <a href="" class="social__link">
+              <img src="/img/contacts/free-icon-instagram-733558.svg" alt="" class="social__img social__img_inst"></a>
+            <a href="" class="social__link">
+              <img src="/img/contacts/vk.svg" alt="" class="social__img social__img_vk"></a>
+            <a href="" class="social__link">
+              <img src="/img/contacts/telegram.svg" alt="" class="social__img social__img_tg"></a>
+            <a href="" class="social__link">
+              <img src="/img/contacts/whatsapp.svg" alt="" class="social__img social__img_whatsapp"></a>
+          </div>
+        </div>
+      </div>
+      <div class="yandex-map">
+        <div class="map" id="map" style="width: 100%; height: 100%"></div>
+      </div>
+      <button class="feedback__btn">Наверх</button>
+    </div>
+  </section>
+
+  <footer class="footer" id="footer">
+    <div class="footer__container container">
+      <a href="" class="footer__logo-link">
+        <img src="/img/footer/RA_logo.png" alt="" class="footer__logo">
+      </a>
+      <span class="rosman-auto">rosman-auto.ru © 2020</span>
+      <nav class="footer-nav">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+            <a href="#services" class="footer-nav__link">Услуги</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#promo" class="footer-nav__link">Акции</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#repairs" class="footer-nav__link">Малярка</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#feedback" class="footer-nav__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      slidesPerView: 'auto',
+      init: false,
+      slidesPerView: 3,
+      spaceBetween: 20,
+      // width: 100,
+      // Optional parameters
+      direction: 'horizontal',
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 12,
+          allowTouchMove: true,
+          // width: 100
+        },
+        575: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+          allowTouchMove: true,
+          // width: 100
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+          allowTouchMove: true,
+          // width: 100
+        },
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+          allowTouchMove: true,
+          // width: 100
+        },
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+          allowTouchMove: true,
+          // width: 100
+        }
+      }
+    });
+    swiper.init();
+    swiper.snapGrid[swiper.snapGrid.length] = swiper.slidesGrid[swiper.snapGrid.length - 1];
+    // console.log(window.innerWidth)
+  </script>
+
+  <script type="text/javascript">
+    ymaps.ready(function () {
+      var myMap = new ymaps.Map('map', {
+        center: [59.923378, 30.435820],
+        zoom: 13,
+        controls: ['smallMapDefaultSet']
+      }, {
+        searchControlProvider: 'yandex#search'
+      }),
+
+        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+          iconContent: 'Складская ул., 6в'
+        }, {
+          // iconLayout: 'default#image',
+
+          preset: "islands#redStretchyIcon"
+          // iconImageHref: 'img/pointMap.svg',
+          // iconImageSize: [28, 32],
+        });
+
+      myMap.geoObjects
+        .add(myPlacemark)
+    });
+  </script>
+
+</body>
+
+</html>
